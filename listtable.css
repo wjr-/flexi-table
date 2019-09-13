@@ -8,7 +8,7 @@
 }
 
 /* show as label-value pairs */
-@media (max-width: 899px) {
+@media screen and (max-width: 699px) {
     .listtable > dl {
         margin-bottom: 1em;
         border-bottom: solid black 1pt;
@@ -24,7 +24,7 @@
 }
 
 /* show as table */
-@media (min-width: 900px) {
+@media screen and (min-width: 700px) {
     .listtable.listtable--3columns > dl > dt,
     .listtable.listtable--3columns > dl > dd {
         width: 33.3%;

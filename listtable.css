@@ -3,27 +3,7 @@
     margin: 0;
 }
 
-.listtable > dl > dt {
-    font-weight: 600;
-}
-
-/* show as label-value pairs */
-@media screen and (max-width: 699px) {
-    .listtable > dl {
-        margin-bottom: 1em;
-        border-bottom: solid black 1pt;
-    }
-
-    .listtable > dl > dt {
-        padding-bottom: 5px;
-    }
-
-    .listtable > dl > dd {
-        padding-bottom: 10px;
-    }
-}
-
-/* show as table */
+/* show as table above 700px */
 @media screen and (min-width: 700px) {
     .listtable.listtable--3columns > dl > dt,
     .listtable.listtable--3columns > dl > dd {
@@ -41,12 +21,6 @@
 
     .listtable > dl:first-child > dt {
         display: inherit;
-        padding: 5px 3px 5px 3px;
-        border-bottom: solid black 1pt;
         order: -1;
-    }
-
-    .listtable > dl > dd {
-        padding: 3px;
     }
 }

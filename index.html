@@ -3,6 +3,42 @@
     <title>listtable demo</title>
     <link rel="stylesheet" href="listtable.css" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <style>
+        .listtable > dl > dt {
+            font-weight: 600;
+            background-color: lightblue;
+        }
+
+        @media screen and (max-width: 699px) {
+            .listtable > dl {
+                margin-bottom: 1em;
+                border-bottom: solid black 1pt;
+            }
+
+            .listtable > dl > dt {
+                padding-bottom: 5px;
+            }
+
+            .listtable > dl > dd {
+                padding-bottom: 10px;
+            }
+        }
+
+        @media screen and (min-width: 700px) {
+            .listtable > dl:first-child > dt {
+                padding: 5px 3px 5px 3px;
+                border-bottom: solid black 1pt;
+            }
+
+            .listtable > dl > dd {
+                padding: 3px;
+            }
+
+            .listtable > dl:nth-child(even) {
+                background-color: lightcyan;
+            }
+        }
+    </style>
 </head>
 <body>
     <div style="max-width: 700px;">
@@ -26,6 +62,26 @@
 
                 <dt>Column 3</dt>
                 <dd>value 2.3</dd>
+            </dl>
+            <dl>
+                <dt>Column 1</dt>
+                <dd>value 3.1</dd>
+
+                <dt>Column 2</dt>
+                <dd>value 3.2</dd>
+
+                <dt>Column 3</dt>
+                <dd>value 3.3</dd>
+            </dl>
+            <dl>
+                <dt>Column 1</dt>
+                <dd>value 4.1</dd>
+
+                <dt>Column 2</dt>
+                <dd>value 4.2</dd>
+
+                <dt>Column 3</dt>
+                <dd>value 4.3</dd>
             </dl>
         </div>
     </div>
